@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-04T15:10:00Z",
+  "title": "Design System: Medina's Cleaning Services",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "primary", "displayName": "Operational Ink", "canonical": "#162224", "tonalRamp": ["#0d1718", "#162224", "#263437", "#435254", "#657071", "#9da5a3", "#ded8cd", "#f5f0e7"] },
+      "cream": { "role": "neutral", "displayName": "Paper Cream", "canonical": "#f5f0e7", "tonalRamp": ["#162224", "#263437", "#435254", "#657071", "#9da5a3", "#ded8cd", "#ede8de", "#f5f0e7"] },
+      "clay": { "role": "secondary", "displayName": "Clay Signal", "canonical": "#bd4b34", "tonalRamp": ["#43150e", "#672117", "#8d3323", "#bd4b34", "#d86d57", "#e89d8e", "#f2c7bd", "#f8e4de"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Editorial Display", "purpose": "Hero and section statements." },
+      "body": { "displayName": "Practical Body", "purpose": "Service details and explanatory copy." },
+      "label": { "displayName": "Operational Label", "purpose": "Navigation, location, and form labels." }
+    },
+    "motion": [
+      { "name": "hero-settle", "value": "1.2s cubic-bezier(.16, 1, .3, 1)", "purpose": "The one authored image arrival in the hero." },
+      { "name": "state-standard", "value": "0.2s ease", "purpose": "Links, buttons, and focus state changes." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "760px" },
+      { "name": "compact", "value": "380px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square, uppercase action for a dark or light host surface.",
+      "html": "<button class=\"ds-btn-primary\">SEND QUOTE REQUEST <svg viewBox=\"0 0 18 18\" aria-hidden=\"true\"><path d=\"M3 9h11M9 4l5 5-5 5\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.8rem;padding:.75rem 1.1rem;border:1px solid #162224;border-radius:0;background:#162224;color:#f5f0e7;font-family:Arial,sans-serif;font-size:.7rem;font-weight:650;letter-spacing:.07em;text-transform:uppercase;transition:background .2s ease,color .2s ease}.ds-btn-primary svg{width:1rem;fill:none;stroke:currentColor;stroke-width:1.5}.ds-btn-primary:hover{background:transparent;color:#162224}.ds-btn-primary:focus-visible{outline:3px solid #bd4b34;outline-offset:4px}"
+    },
+    {
+      "name": "Ledger Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "A transparent form field that is defined by one practical bottom rule.",
+      "html": "<label class=\"ds-field\">EMAIL ADDRESS<input type=\"email\" placeholder=\"you@example.com\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:.55rem;color:#162224;font-family:Arial,sans-serif;font-size:.69rem;font-weight:680;letter-spacing:.07em}.ds-field input{padding:.85rem 0;border:0;border-bottom:1px solid rgba(22,34,36,.2);border-radius:0;outline:0;background:transparent;color:#162224;font:430 1rem/1.4 Arial,sans-serif}.ds-field input:focus{border-color:#bd4b34}.ds-field input:focus-visible{outline:3px solid #bd4b34;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Manhattan Reset Ledger",
+    "overview": "The system feels considered and capable rather than glossy or overly precious. A dark, blue-black field gives the real work photography and generous cream typography a grounded, confident setting. The page moves in strong editorial blocks without a decorative card system.",
+    "keyCharacteristics": ["Dark operational ink paired with warm paper-like cream", "Oversized but compact display type with human, real-work imagery", "Square, direct controls and hairline ledger rules", "One warm clay accent reserved for labels and attention points"],
+    "rules": [
+      { "name": "The Paper-and-Ink Rule", "body": "Every major surface is either operational ink or paper cream; warm clay only sharpens an existing hierarchy.", "section": "colors" },
+      { "name": "The Plainspoken Scale Rule", "body": "Do not decorate headlines with type effects; their authority comes from size, compact leading, and a deliberate italic weight shift only where emphasis is needed.", "section": "typography" }
+    ],
+    "dos": ["Do lead with genuine work photography; finished spaces and people doing the work are the strongest proof.", "Do use page-scale dark and light surface shifts to define stages of a service story.", "Do keep calls to action clear, all-caps, and action-specific.", "Do preserve the 760px single-column mobile transition when adding new page sections."],
+    "donts": ["Don't turn service categories into equal padded cards or stack decorative shadows under content.", "Don't introduce rounded, glassy UI or gradient text; they conflict with the direct ink-and-paper material language.", "Don't invent trust claims, reviews, pricing, or contact details that the business has not supplied."]
+  }
+}
