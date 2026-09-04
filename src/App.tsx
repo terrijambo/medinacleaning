@@ -16,8 +16,6 @@ const gallery = [
   { src: '/media/image-8.jpg', alt: 'Detail cleaning work in a room.' },
   { src: '/media/image-9.jpg', alt: 'Freshly cleaned interior.' },
   { src: '/media/image-10.jpg', alt: 'Finished clean in a commercial interior.' },
-  { src: '/media/image-11.jpg', alt: 'Cleaning team prepared with floor equipment.' },
-  { src: '/media/image-12.jpg', alt: 'Cleaning team in a professional workspace.' },
 ]
 
 function Arrow() {
@@ -91,11 +89,11 @@ export default function App() {
         </section>
 
         <section className="proof" id="about">
-          <div className="proof-photo"><img src="/media/image-2.jpg" alt="Two members of a cleaning team standing with professional floor equipment." loading="lazy" /></div>
+          <div className="proof-photo"><img src="/media/image-2-upscaled.jpg" alt="Two members of a cleaning team standing with professional floor equipment." loading="lazy" /></div>
           <div className="proof-copy">
-            <p className="section-label">A team you can see</p>
-            <h2>Care that<br />shows up.</h2>
-            <p>Every space has its own rhythm. We begin with what needs attention, then do the work with care—from the first pass to the final look around.</p>
+            <p className="section-label">Made with care</p>
+            <h2>Detail you can<br />count on.</h2>
+            <p>Every visit is built around the details that make a space feel right: consistent care, respectful service, and a clean you can see from the first pass to the final look around.</p>
             <a className="text-link" href="#work">See the work <Arrow /></a>
           </div>
         </section>
